@@ -1,57 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main {
+    /* background-image: url('../images/header-background.jpg'); */
+    height:85vh;
+    /* background-size: cover; */
 }
 
-.header {
-    /* background-image: url('images/header-background.jpg'); */
-    background-size: cover;
-    height: 15vh;
+.main-background {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left: 5vw;
+    /* background-color: rgb(52, 52, 52, 0.6); */
+    /* background-image: linear-gradient(rgb(233, 253, 255),transparent); */
 }
 
-.header__top {
-    position: fixed;
-    width: 80vw;
-    height: 72px;
-    background-color: white;
-    border: 1px solid gray;
-    padding: 10px 30px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-}
-.nav__header{
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
+.main__inner__content {
+    width: 50%;
 }
 
-.nav-menu {
+.name-text,
+.short-bio-text,
+.welcome-text {
+    font-weight: 400;
+}
+
+.name-text {
+    font-size: 32px;
+}
+
+.short-bio-text {
+    margin-top: 10px;
+}
+
+.welcome-text {
+    margin-top: 20px;
+}
+.main__inner{
+    /* border: 1px solid red; */
     display: flex;
-    gap: 5vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    li {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        list-style: none;
-        a {
-            text-decoration: none;
-            color: rgb(81, 77, 77);
-        }
+    align-items: centert;
+    gap: 10px;
+    justify-content: space-around;
+}
+.my-photo{
+    width: 330px;
+    border-radius: 50%;
+}
+
+@media (max-width: 990px){
+    /* .main__inner{
+        flex-direction: column;
+    } */
+    .my-photo{
+        width: 250px;
     }
 }
-.social-menu-link{
-    margin: 0 10px;
+
+@media (max-width: 800px){
+    .main__inner{
+        align-items: center;
+        flex-direction: column;
+    }
+    .section__photo{
+        order: -1;
+    }
+    .main__inner__content{
+        width: 100%;
+    }
 }
-.main{
-    height: 85vh;
-    background-image: url('images/header-background.jpg');
-    background-size: cover;
+@media (max-width: 570px){
+    .main{
+        height: max-content;
+    }
 }

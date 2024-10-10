@@ -1,0 +1,49 @@
+.main__inner {
+    height: 75vh;
+    border-radius: 15px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    gap: 5vw;
+}
+
+.main__inner__content {
+   
+    /* height: 100%; */
+    border-radius: 15px;
+    color: black;
+    padding: 20px 50px ;
+    background-color: rgb(241, 241, 241);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    label{
+        /* background-color: rebeccapurple; */
+        max-width: max-content;
+    }
+}
+
+.input-text-name-and-email {
+    max-width: 200px;
+}
+
+.map-img {
+    width: 400px;
+}
+.message-textarea{
+    /* width: 200px; */
+    width: 300px;
+    height: 80px;
+}
+
+.submit-btn {
+    padding: 5px 30px;
+    color: white;
+    border: none;
+    width: max-content;
+    border-radius: 5px;
+    background-color: #4267B2;
+}
