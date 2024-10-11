@@ -19,12 +19,13 @@
         <div class="container">
             <div class="header__top">
                 <nav class="nav__header">
-                    
-                    <div>
-                        <a href="index.html"><h1>Daniyar</h1></a>
 
+                    <div>
+                        <a href="index.html">
+                            <h1>Daniyar</h1>
+                        </a>
                     </div>
-                    <button class="hamburger-menu-button"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
+                    <button class="burger-menu"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="family.html">Family</a></li>
@@ -46,25 +47,48 @@
     </header>
 
     <main class="main">
-            <div class="container">
-                <div class="main__inner">
-                    <section class="main__inner__content">
-                        <p class="hello-text">Hello There!</p>
-                        <h3 class="short-bio-text">I'm Daniyar! I’m passionate about technology and love to dive deep into programming and development. When I'm not coding, you can find me playing PUBG, strategizing in a chess match, or enjoying some table tennis. I’m also a big fan of binge-watching my favorite TV series.</h3>
-                        <h4 class="welcome-text">Welcome to my portfolio! Here, you can explore my projects, get to know
-                            me
-                            better, and see what
-                            I’ve
-                            been up to. Let’s dive in and connect!</h4>
-                    </section>
-                    <section class="section__photo">
-                        <img class="my-photo" src="images/my-photo.jpg" alt="">
-                    </section>
-                    <!-- <img src="" alt=""> -->
-                </div>
+        <div class="container">
+            <div class="main__inner">
+                <section class="main__inner__content">
+                    <p class="hello-text">Hello There!</p>
+                    <h3 class="short-bio-text">I'm Daniyar! I’m passionate about technology and love to dive deep into
+                        programming and development. When I'm not coding, you can find me playing PUBG, strategizing in
+                        a chess match, or enjoying some table tennis. I’m also a big fan of binge-watching my favorite
+                        TV series.</h3>
+                    <h4 class="welcome-text">Welcome to my portfolio! Here, you can explore my projects, get to know
+                        me
+                        better, and see what
+                        I’ve
+                        been up to. Let’s dive in and connect!</h4>
+                    <a href="contact.html">
+                        <button type="reset" class="submit-btn"><span>Contact me</span>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                fill="currentColor" class="remixicon ">
+                                <path
+                                    d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </a>
+                </section>
+                <section class="section__photo">
+                    <img class="my-photo" src="images/my-photo.jpg" alt="">
+                </section>
+            </div>
         </div>
     </main>
 
+
+    <script>
+        // Select burger menu and navigation menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle 'active' class on click
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

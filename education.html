@@ -20,10 +20,13 @@
         <div class="container">
             <div class="header__top">
                 <nav class="nav__header">
+
                     <div>
-                        <a href="index.html"><h1>Daniyar</h1></a>
+                        <a href="index.html">
+                            <h1>Daniyar</h1>
+                        </a>
                     </div>
-                    <button class="hamburger-menu-button"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
+                    <button class="burger-menu"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="family.html">Family</a></li>
@@ -43,12 +46,72 @@
             </div>
         </div>
     </header>
+
+
+
     <main class="main">
         <div class="container">
             <div class="main__inner">
+                <h1>My Education</h1>
+                <p>Here you can see detailed overview of my background</p>
+
+                <h2>Timeline of My Education</h2>
+                <ol>
+                    <li>2011-2022: Lyceum school No. 101 named after Ali Muslim
+                        <br>Graduated with Honors
+                    </li>
+                    <li>2021-2022: Dostyq school
+                        <br>I am preparing for the UNT exam
+                    </li>
+                    <li>2022-2026: SDU University
+                        <br>Bachelor of Science in Information Systems
+                    </li>
+                </ol>
+
+                <table >
+                    <tr>
+                        <th>Year</th>
+                        <th>Subject</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>Math</td>
+                        <td>participated in the Mathematics Olympiad</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Physics</td>
+                        <td>Scored 42 point at the UNT</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Course Introduction JAVA</td>
+                        <td>closed the item on A</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Algorithms and data structures</td>
+                        <td>closed the item on A</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>
+
+
+
+
+    <script>
+        // Select burger menu and navigation menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle 'active' class on click
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

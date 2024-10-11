@@ -6,9 +6,7 @@
 
 body {
     color: white;
-    /* background: rgb(15, 14, 48); */
     background-color: black;
-    /* background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(9, 9, 121, 1) 35%); */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
@@ -25,11 +23,13 @@ body {
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
+
 .header__top {
+    position: relative;
     width: 80vw;
     padding: 10px 30px;
     border-radius: 15px;
@@ -80,7 +80,7 @@ a{
     }
 }
 
-.hamburger-menu-button {
+.burger-menu {
     display: none;
     border: none;
     background: none;
@@ -93,8 +93,22 @@ a{
         display: none;
     }
 
-    .hamburger-menu-button {
+    .burger-menu {
         display: block;
+    }
+
+    .nav-menu.active {
+        padding: 10px;
+        background-color: rgb(60, 60, 60);
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        top: 50px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 50;
+        /* Show the menu when it's active */
     }
 
     .social-menu {

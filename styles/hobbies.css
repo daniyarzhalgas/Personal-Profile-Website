@@ -1,0 +1,36 @@
+.main__inner {
+    gap: 10px;
+    padding: 5vh 5vw;
+    position: relative;
+    top: 50px;
+    border-radius: 15px;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.hobbies-img {
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+
+.game_icon {
+    width: 30px;
+    height: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

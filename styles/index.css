@@ -32,24 +32,44 @@
     align-items: center;
     justify-content: center;
     /* gap: 10px; */
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .my-photo {
     width: 330px;
     border-radius: 50%;
 }
-.hello-text{
+
+.hello-text {
     color: #cccccc;
 }
+
+.submit-btn {
+    margin: 10px auto;
+    /* margin-top: 10px; */
+    display: flex;
+    padding: 5px 30px;
+    color: white;
+    border: 1px solid rgb(30, 30, 30);
+    width: max-content;
+    border-radius: 5px;
+    background-color: #eb5d3a;
+    align-items: center;
+    padding: auto;
+    gap: 5px;
+
+    &:hover {
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid #cccccc;
+    }
+}
+
 
 @media (max-width: 990px) {
     .my-photo {
         width: 250px;
     }
-}
-
-@media (max-width: 850px) {
     .main__inner {
         height: max-content;
         max-height: min-content;

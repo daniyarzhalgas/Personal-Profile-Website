@@ -19,10 +19,13 @@
         <div class="container">
             <div class="header__top">
                 <nav class="nav__header">
+
                     <div>
-                        <a href="index.html"><h1>Daniyar</h1></a>
+                        <a href="index.html">
+                            <h1>Daniyar</h1>
+                        </a>
                     </div>
-                    <button class="hamburger-menu-button"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
+                    <button class="burger-menu"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="family.html">Family</a></li>
@@ -45,11 +48,47 @@
 
     <main class="mian">
         <div class="container">
-            <div class="main__innner">
-                hobbies page 
+            <div class="main__inner">
+                <section class="main__inner__content">
+                    <h2>Video Game Playing</h2>
+                    <img class="game_icon" src="images/gaming.png" alt="">
+                    <p>I enjoy playing multiplayer video games like PUBG with friends. It’s a fun way to connect,
+                        strategize, and have fun!</p>
+
+                    <h2>Listening to Music</h2>
+                    <img class="game_icon" src="images/musical-notes.png" alt="Music Note" width="50" height="50">
+                    <p>Music is a big part of my life. I enjoy listening to a variety of genres, and I always love
+                        discovering new artists.</p>
+
+                    <h2>Ping-Pong</h2>
+                    <img class="game_icon" src="images/tennis-ball.png" alt="Ping-Pong Icon" width="50" height="50">
+                    <p>Ping-Pong is a sport I enjoy in my spare time. It’s both exciting and a great way to stay active
+                        while having fun with friends.</p>
+
+                    <h2>Gallery</h2>
+                    <div class="gallery">
+                        <img src="images/pubg.jpeg" alt="Playing Video Games">
+                        <img src="images/music.jpeg" alt="Listening to Music">
+                        <img src="images/Table Tennis.jpeg" alt="Playing Ping-Pong">
+                    </div>
+
+                </section>
+
             </div>
         </div>
     </main>
+
+
+    <script>
+        // Select burger menu and navigation menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle 'active' class on click
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

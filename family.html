@@ -21,9 +21,11 @@
             <div class="header__top">
                 <nav class="nav__header">
                     <div>
-                        <a href="index.html"><h1>Daniyar</h1></a>
+                        <a href="index.html">
+                            <h1>Daniyar</h1>
+                        </a>
                     </div>
-                    <button class="hamburger-menu-button"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
+                    <button class="burger-menu"><img src="images/burger-menu-svgrepo-com.svg" alt=""></button>
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="family.html">Family</a></li>
@@ -52,7 +54,18 @@
         </div>
     </main>
 
-    
+
+
+    <script>
+        // Select burger menu and navigation menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle 'active' class on click
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
