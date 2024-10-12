@@ -133,6 +133,10 @@ a {
     }
 }
 
+.footer__nav-links {
+    display: flex;
+}
+
 .footer__content_top {
     margin-top: 40px;
 }
