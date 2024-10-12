@@ -2,11 +2,14 @@
     padding: 5vh 5vw;
     border-radius: 15px;
     background-color: rgb(30, 30, 30);
+    text-align: center;
+    gap: 50px;
+}
+
+.main__inner__content {
     display: flex;
     flex-wrap: wrap;
-    /* Allow items to wrap to the next row */
     gap: 20px;
-
     align-items: center;
     justify-content: center;
     gap: 5vw;
@@ -18,9 +21,17 @@
 }
 
 .family_members {
+    border: 1px solid transparent;
     gap: 5px;
     display: flex;
     width: 45%;
+    align-items: center;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: rgb(46, 46, 46);
+        border-radius: 15px;
+    }
 }
 
 .family-link {
@@ -57,15 +68,17 @@
     }
 }
 
-@media (min-width: 1800px){
-    .family-members-img{
+@media (min-width: 1800px) {
+    .family-members-img {
         width: 300px;
         height: auto;
     }
-    .family_members-title{
+
+    .family_members-title {
         font-size: 36px;
     }
-    .family_members-text{
+
+    .family_members-text {
         font-size: 24px;
     }
 }

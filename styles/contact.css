@@ -62,6 +62,7 @@
     align-items: center;
     padding: auto;
     gap: 5px;
+    transition: 0.3s;
 
     &:hover {
         box-sizing: border-box;
@@ -172,7 +173,8 @@
             height: 20px;
         }
     }
-    .info-address{
+
+    .info-address {
         font-size: 20px;
     }
 }

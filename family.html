@@ -50,56 +50,61 @@
     <main class="main">
         <div class="container">
             <div class="main__inner">
-                <div class="family_members">
-                    <img class="family-members-img" src="images/mom-pap.jpg" alt="">
-                    <div>
-                        <h1 class="family-members-title">Mom and Dad</h1>
-                        <p class="family-members-text">
-                            My parents are the foundation of our family. My dad's strength and guidance, along with my
-                            mom's
-                            warmth and care, have created a loving, supportive home. Together, they’ve taught us the
-                            values
-                            of hard work, love, and respect.
-                        </p>
+                <h1>My Family</h1>
+                <div class="main__inner__content">
+                    <div class="family_members">
+                        <img class="family-members-img" src="images/mom-pap.jpg" alt="">
+                        <div>
+                            <h2 class="family-members-title">Mom and Dad</h2>
+                            <p class="family-members-text">
+                                My parents are the foundation of our family. My dad's strength and guidance, along with
+                                my
+                                mom's
+                                warmth and care, have created a loving, supportive home. Together, they’ve taught us the
+                                values
+                                of hard work, love, and respect.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="family_members">
+                        <img class="family-members-img" src="images/nuri-img.png" alt="">
+                        <div>
+                            <h2 class="family-members-title">My Sister</h2>
+                            <p class="family-members-text">
+                                My sister is my closest friend and confidant. She's always been there for me, offering
+                                support and encouragement. With her energy and positivity, she brings joy and laughter
+                                into
+                                our lives, making every moment spent together special.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="family_members">
+                        <img class="family-members-img" src="images/my-photo.jpg" alt="">
+                        <div>
+                            <h2 class="family-members-title">About me</h2>
+                            <p class="family-members-text">
+                                I’m someone who values family, hard work, and personal growth. I enjoy challenges and
+                                constantly seek to learn new things, whether through my studies in tech or playing games
+                                like PUBG and chess. My determination and curiosity drive me to achieve my goals and
+                                keep
+                                growing every day.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="family_members">
-                    <img class="family-members-img" src="images/nuri-img.png" alt="">
-                    <div>
-                        <h1 class="family-members-title">My Sister</h1>
-                        <p class="family-members-text">
-                            My sister is my closest friend and confidant. She's always been there for me, offering
-                            support and encouragement. With her energy and positivity, she brings joy and laughter into
-                            our lives, making every moment spent together special.
-                        </p>
-                    </div>
-                </div>
-                <div class="family_members">
-                    <img class="family-members-img" src="images/my-photo.jpg" alt="">
-                    <div>
-                        <h1 class="family-members-title">About me</h1>
-                        <p class="family-members-text">
-                            I’m someone who values family, hard work, and personal growth. I enjoy challenges and
-                            constantly seek to learn new things, whether through my studies in tech or playing games
-                            like PUBG and chess. My determination and curiosity drive me to achieve my goals and keep
-                            growing every day.
-                        </p>
-                    </div>
-                </div>
-                <!-- <img src="images/nuri-graduation.JPG" alt="" style="width: 500px;"> -->
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__content footer__content_top">
+        <div class="footer__content  footer__content_top">
             <a class="footer-link-img" href="https://github.com/daniyarzhalgas"><img class="footer-img"
                     src="images/github-mark-white.png" alt=""></a>
             <a class="footer-link-img" href="https://www.instagram.com/daniyarzhalgas/"><img class="footer-img"
                     src="images/insta-logo.png" alt=""></a>
+            <a class="footer-link-img" href="https://www.linkedin.com/in/daniyar-zhalgas-b51a35297/"><img
+                    class="footer-img" src="images/linkedin.png" alt=""></a>
             <a class="footer-link-img" href="https://t.me/daniyarzhalgas"><img class="footer-img"
-                    src="images/linkedin.png" alt=""></a>
-            <a class="footer-link-img" href="220103080@stu.sdu.edu.kz"><img class="footer-img"
                     src="images/telegram (1).png" alt=""></a>
         </div>
         <div class="footer__content">
@@ -108,12 +113,11 @@
     </footer>
 
 
+
     <script>
-        // Select burger menu and navigation menu
         const burgerMenu = document.querySelector('.burger-menu');
         const navMenu = document.querySelector('.nav-menu');
 
-        // Toggle 'active' class on click
         burgerMenu.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });

@@ -50,3 +50,10 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 600px){
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+}
