@@ -1,7 +1,6 @@
 .main__inner {
     gap: 10px;
     padding: 5vh 5vw;
-    position: relative;
     top: 50px;
     border-radius: 15px;
     background-color: rgb(30, 30, 30);
@@ -16,9 +15,13 @@
     width: 200px;
 }
 
+.hobbies-link {
+    color: #eb5d3a;
+}
 
 
-.game_icon {
+
+.hobbies-icon {
     width: 30px;
     height: auto;
 }
@@ -33,4 +36,17 @@
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+@media (min-width: 1800px){
+    .hobbies-title{
+        font-size: 30px;
+    }
+    .hobbies-icon{
+        width: 45px;
+        height: auto;
+    }
+    .hobbies-text{
+        font-size: 20px;
+    }
 }

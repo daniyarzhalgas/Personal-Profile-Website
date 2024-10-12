@@ -9,6 +9,10 @@
     gap: 5vw;
 }
 
+.contact-link {
+    color: #eb5d3a;
+}
+
 .main__inner__content {
     /* height: 100%; */
     border-radius: 15px;
@@ -131,5 +135,44 @@
 @media (max-width:330px) {
     .input-text-name-and-email {
         width: 100%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .map-img {
+        width: 500px;
+        height: auto;
+    }
+
+    .contact-title {
+        font-size: 35px;
+    }
+
+    .main__inner__content {
+        label {
+            font-size: 20px;
+        }
+
+        .input-text-name-and-email {
+            width: 250px;
+            height: 25px;
+        }
+    }
+
+    .submit-btn {
+        width: max-content;
+        height: 38px;
+
+        span {
+            font-size: 17px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .info-address{
+        font-size: 20px;
     }
 }

@@ -23,7 +23,6 @@
 
 .main__inner {
     padding: 1vh 5vw;
-    position: relative;
     top: 50px;
     height: 60vh;
     border-radius: 15px;
@@ -42,6 +41,11 @@
 
 .hello-text {
     color: #cccccc;
+}
+
+
+.index_link {
+    color: #eb5d3a;
 }
 
 .submit-btn {
@@ -70,6 +74,7 @@
     .my-photo {
         width: 250px;
     }
+
     .main__inner {
         height: max-content;
         max-height: min-content;
@@ -89,5 +94,40 @@
 @media (max-width: 570px) {
     .main {
         height: max-content;
+    }
+}
+
+@media (min-width: 1800px) {
+    .hello-text {
+        font-size: 20px;
+    }
+
+    .short-bio-text {
+        font-size: 25px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        width: 180px;
+        height: 40px;
+
+        span {
+            font-size: 17px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+    .my-photo {
+        width: 400px;
+        max-width: 450px;
+        height: auto;
     }
 }
